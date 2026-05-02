@@ -1,0 +1,142 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background: #0f0f1a;
+  color: #e5e7eb;
+  line-height: 1.7;
+}
+
+a { color: #f59e0b; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* ── NAV ── */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  border-bottom: 1px solid #1f1f35;
+}
+.nav-brand { font-size: 1.2rem; font-weight: 700; color: #fff; }
+.nav-brand span { color: #f59e0b; }
+.nav-links { display: flex; gap: 24px; font-size: 0.9rem; }
+.nav-links a { color: #9ca3af; }
+.nav-links a:hover { color: #f59e0b; text-decoration: none; }
+
+/* ── FOOTER ── */
+footer {
+  border-top: 1px solid #1f1f35;
+  padding: 32px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.85rem;
+  color: #6b7280;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+footer a { color: #6b7280; }
+footer a:hover { color: #f59e0b; text-decoration: none; }
+
+/* ── SHARED ── */
+.wrap { max-width: 720px; margin: 0 auto; padding: 64px 24px; }
+
+h1 { font-size: 2rem; font-weight: 700; color: #fff; margin-bottom: 8px; }
+
+.card {
+  background: #161625;
+  border: 1px solid #1f1f35;
+  border-radius: 12px;
+}
+
+/* ── INDEX — HERO ── */
+.hero {
+  text-align: center;
+  padding: 96px 24px 80px;
+  max-width: 720px;
+  margin: 0 auto;
+}
+.hero-icon { font-size: 3rem; margin-bottom: 16px; }
+.hero h1 { font-size: 3rem; font-weight: 800; letter-spacing: -0.5px; margin-bottom: 16px; }
+.hero h1 span { color: #f59e0b; }
+.hero p { font-size: 1.2rem; color: #9ca3af; margin-bottom: 40px; }
+.hero-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: #f59e0b;
+  color: #0f0f1a;
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 14px 28px;
+  border-radius: 50px;
+  transition: opacity 0.2s;
+}
+.hero-cta:hover { opacity: 0.88; text-decoration: none; }
+.hero-note { margin-top: 16px; font-size: 0.85rem; color: #6b7280; }
+
+/* ── INDEX — FEATURES ── */
+.features {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 64px 24px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
+.feature-card { padding: 28px; }
+.feature-icon { font-size: 1.8rem; margin-bottom: 12px; }
+.feature-card h3 { font-size: 1rem; font-weight: 600; color: #fff; margin-bottom: 8px; }
+.feature-card p { font-size: 0.9rem; color: #9ca3af; }
+
+/* ── INDEX — PRICING ── */
+.pricing { max-width: 640px; margin: 0 auto; padding: 0 24px 80px; text-align: center; }
+.pricing h2 { font-size: 1.8rem; font-weight: 700; color: #fff; margin-bottom: 32px; }
+.pricing-cards { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.pricing-card { padding: 28px 24px; text-align: left; }
+.pricing-card.pro { border-color: #f59e0b; }
+.pricing-card .plan { font-size: 0.8rem; font-weight: 600; color: #f59e0b; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px; }
+.pricing-card .price { font-size: 2rem; font-weight: 800; color: #fff; margin-bottom: 4px; }
+.pricing-card .price span { font-size: 1rem; font-weight: 400; color: #6b7280; }
+.pricing-card ul { list-style: none; margin-top: 16px; display: flex; flex-direction: column; gap: 8px; }
+.pricing-card ul li { font-size: 0.9rem; color: #9ca3af; }
+.pricing-card ul li::before { content: "✓ "; color: #f59e0b; }
+
+/* ── SUPPORT ── */
+.sub { color: #9ca3af; margin-bottom: 48px; }
+
+.contact-card {
+  padding: 32px;
+  margin-bottom: 48px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.contact-icon { font-size: 2rem; }
+.contact-card h2 { font-size: 1rem; font-weight: 600; color: #fff; margin-bottom: 4px; }
+.contact-card p { font-size: 0.9rem; color: #9ca3af; }
+
+h2.section { font-size: 1.3rem; font-weight: 700; color: #fff; margin-bottom: 20px; }
+
+.faq { display: flex; flex-direction: column; gap: 16px; }
+.faq-item { padding: 20px 24px; }
+.faq-item h3 { font-size: 0.95rem; font-weight: 600; color: #fff; margin-bottom: 8px; }
+.faq-item p { font-size: 0.9rem; color: #9ca3af; }
+
+/* ── PRIVACY POLICY ── */
+.meta { color: #6b7280; font-size: 0.9rem; margin-bottom: 40px; }
+
+.wrap h2 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #fff;
+  margin: 36px 0 10px;
+  border-left: 3px solid #f59e0b;
+  padding-left: 12px;
+}
+
+.wrap p { margin-bottom: 12px; color: #9ca3af; }
+.wrap ul { padding-left: 20px; margin-bottom: 12px; }
+.wrap ul li { margin-bottom: 6px; color: #9ca3af; }
+.wrap strong { color: #e5e7eb; }

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — KoseFlow</title>
+  <link rel="stylesheet" href="app.css" />
+</head>
+<body>
+
+  <nav>
+    <a class="nav-brand" href="index.html"><span>⚡</span> KoseFlow</a>
+    <div class="nav-links">
+      <a href="support.html">Support</a>
+      <a href="privacy-policy.html">Privacy Policy</a>
+    </div>
+  </nav>
+
+  <div class="wrap">
+    <h1>Privacy Policy</h1>
+    <p class="meta">KoseFlow Chrome Extension &nbsp;·&nbsp; Last updated: May 1, 2025</p>
+
+    <h2>1. Overview</h2>
+    <p>
+      KoseFlow ("we", "our", "the extension") is a Chrome extension that automates image and video
+      generation on Google Flow (<a href="https://labs.google" target="_blank">labs.google</a>).
+      We are committed to protecting your privacy. This policy explains what data we collect, why
+      we collect it, and how it is handled.
+    </p>
+
+    <h2>2. Data We Collect</h2>
+    <p>When you sign in with your Google account, we store the following information in our database (Firebase Firestore):</p>
+    <ul>
+      <li><strong>Email address</strong> — used solely to identify your account and pre-fill checkout forms.</li>
+      <li><strong>Plan status</strong> — <em>free</em> or <em>pro</em>, determined by license activation.</li>
+      <li><strong>Daily usage count</strong> — number of prompts processed today, reset each day. Used to enforce the daily generation limit.</li>
+      <li><strong>Usage date</strong> — the date the usage counter was last reset.</li>
+    </ul>
+    <p>We do <strong>not</strong> collect, store, or transmit your generated images, video files, prompts, or any content you produce through Google Flow.</p>
+
+    <h2>3. Authentication</h2>
+    <p>
+      Sign-in is handled entirely through <strong>Google OAuth 2.0</strong> via the Chrome Identity API.
+      We never see or store your Google password. The OAuth token is used only to obtain your email address
+      and authenticate your Firebase session.
+    </p>
+
+    <h2>4. Payments</h2>
+    <p>
+      Pro plan purchases are processed by <strong>LemonSqueezy</strong>
+      (<a href="https://www.lemonsqueezy.com" target="_blank">lemonsqueezy.com</a>), a third-party payment
+      provider. We do not collect, process, or store any credit card or payment information. When you activate
+      a license key, the key is verified with LemonSqueezy's API and then discarded — only the resulting plan
+      status (<em>pro</em>) is saved to your account.
+    </p>
+
+    <h2>5. Third-Party Services</h2>
+    <ul>
+      <li><strong>Google Firebase</strong> — authentication and database (Firestore). <a href="https://firebase.google.com/support/privacy" target="_blank">Firebase Privacy Policy</a></li>
+      <li><strong>Google OAuth 2.0</strong> — sign-in only. <a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a></li>
+      <li><strong>LemonSqueezy</strong> — payment processing and license verification. <a href="https://www.lemonsqueezy.com/privacy" target="_blank">LemonSqueezy Privacy Policy</a></li>
+    </ul>
+    <p>We do not sell, rent, or share your personal data with any other third parties.</p>
+
+    <h2>6. Data Retention</h2>
+    <p>
+      Your account data (email, plan, usage) is retained as long as you have an active account.
+      You may request deletion of your data at any time by contacting us at the email below.
+      Upon request, we will permanently delete your Firestore document within 7 days.
+    </p>
+
+    <h2>7. Local Storage</h2>
+    <p>
+      The extension uses Chrome's local extension storage to persist your UI settings
+      (e.g., model selection, concurrent prompt count, filename prefix). This data never
+      leaves your device and can be cleared by removing the extension.
+    </p>
+
+    <h2>8. Permissions</h2>
+    <p>The extension requests the following Chrome permissions:</p>
+    <ul>
+      <li><strong>sidePanel</strong> — to display the extension's control panel.</li>
+      <li><strong>tabs</strong> — to detect the active Google Flow tab and relay the auth token.</li>
+      <li><strong>downloads</strong> — to save generated images and videos to your device.</li>
+      <li><strong>identity</strong> — to sign in with your Google account via OAuth 2.0.</li>
+    </ul>
+
+    <h2>9. Children's Privacy</h2>
+    <p>
+      KoseFlow is not directed at children under the age of 13. We do not knowingly collect
+      personal information from children.
+    </p>
+
+    <h2>10. Changes to This Policy</h2>
+    <p>
+      We may update this privacy policy from time to time. The "Last updated" date at the top
+      of this page reflects the most recent revision. Continued use of the extension after
+      changes constitutes acceptance of the updated policy.
+    </p>
+
+    <h2>11. Contact</h2>
+    <p>
+      For privacy-related questions or data deletion requests, please contact us at:
+      <a href="mailto:ai.kose.lab@gmail.com">ai.kose.lab@gmail.com</a>
+    </p>
+  </div>
+
+  <footer>
+    <div>© 2025 KoseFlow · <a href="mailto:ai.kose.lab@gmail.com">ai.kose.lab@gmail.com</a></div>
+    <div>
+      <a href="index.html">Home</a> &nbsp;·&nbsp;
+      <a href="support.html">Support</a>
+    </div>
+  </footer>
+
+</body>
+</html>
