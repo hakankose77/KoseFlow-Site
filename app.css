@@ -113,7 +113,7 @@ h1 { font-size: 2rem; font-weight: 700; color: #fff; margin-bottom: 8px; }
   align-items: center;
   gap: 20px;
 }
-.contact-icon { font-size: 2rem; }
+.contact-icon { font-size: 2rem; color: #9ca3af; flex-shrink: 0; }
 .contact-card h2 { font-size: 1rem; font-weight: 600; color: #fff; margin-bottom: 4px; }
 .contact-card p { font-size: 0.9rem; color: #9ca3af; }
 
